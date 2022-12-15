@@ -25,8 +25,8 @@ function App() {
         margin: 2,
         color: {
           dark: "000000",
-          light: "#EEEEEEFF",
-        },
+          light: "#EEEEEEFF"
+        }
       },
       (err, url) => {
         if (err) return console.error(err);
@@ -51,7 +51,7 @@ function App() {
           size="small"
           placeholder="e.g. https://google.com"
           value={url}
-          onChange={(e) => setUrl(e.target.value)}
+          onChange={e => setUrl(e.target.value)}
         />
         <Button variant="contained" color="success" onClick={generate}>
           Generate
@@ -60,7 +60,12 @@ function App() {
         {qr && (
           <>
             <img src={qr} />
-            <Button variant="contained" color="success" href={qr} download="qr.png">
+            <Button
+              variant="contained"
+              color="success"
+              href={qr}
+              download="qr.png"
+            >
               Download
             </Button>
           </>
@@ -75,8 +80,8 @@ function ToggleColorMode() {
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-      },
+        setMode(prevMode => (prevMode === "light" ? "dark" : "light"));
+      }
     }),
     []
   );
@@ -85,8 +90,8 @@ function ToggleColorMode() {
     () =>
       createTheme({
         palette: {
-          mode,
-        },
+          mode
+        }
       }),
     [mode]
   );
