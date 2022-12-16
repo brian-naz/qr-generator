@@ -1,7 +1,7 @@
 # QR Code Generator
 
 To get started:
-<a href="https://wc8658-3000.preview.csb.app/">Demo</link>
+<a href="https://qr-generator-brian-naz.vercel.app/">Demo</link>
 
 ### Changelog:
 
