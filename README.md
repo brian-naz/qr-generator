@@ -7,7 +7,7 @@ To get started:
 
 Clone the repo:
 ```bash
-https://github.com/brian-naz/qr-generator.git
+git clone https://github.com/brian-naz/qr-generator.git
 ```
 Go to the directory and simply type:
 ```bash
